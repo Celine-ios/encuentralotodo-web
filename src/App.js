@@ -3,9 +3,7 @@ import logo from './assets/images/icon.png';
 import './App.css';
 
 class App extends Component {
-      sendIt = () => {
-      alert("Hello");
-    }
+      
   render() {
     return (
       <div className="App">
@@ -31,6 +29,13 @@ class App extends Component {
             </div>
           </form>
         </div>
+        <footer class="footer">
+          <div class="footer-container">
+            <span>encuentralotodo, C.A</span>
+            <span>All Rights Reserved</span>
+            <span>2018</span>      
+          </div>
+        </footer>
       </div>
     );
   }

@@ -10,6 +10,11 @@ body {
   display: flex;
   justify-content: center;
 }
+.footer-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
 /* Containers */
 
 /* Login Styles */
@@ -59,3 +64,17 @@ label {
   background: #B200FFFF;
 }
 /* Buttons */
+
+/* Footers */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-container span {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 1%;
+  font-weight: lighter;
+}
+/* Footer */
