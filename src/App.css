@@ -1,28 +1,61 @@
+body {
+  background-image: url(./assets/images/bg.jpg);
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* Containers */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+/* Containers */
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* Login Styles */
+.login {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4% 2%;
 }
+.login div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 4% 2%;
+}
+ div .input {
+  padding: 1%;
+  height: 2em;
+  border: none;
+  border-radius: 2%;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 2%;
+  color: hsl(0.0, 0.0%, 50.2%);
+}
+label {
+  font-family: 'Open Sans', sans-serif; 
+}
+/* Login Styles */
 
-.App-title {
-  font-size: 1.5em;
+/* Buttons */
+.btn {
+  border: 0;
+  border-radius: 3%;
+  font-family: 'Open Sans';
+  transition: all .3s;
 }
-
-.App-intro {
-  font-size: large;
+.btn:focus {
+  outline-color: #fff;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.btn-purple {
+  color: #fff;
+  background: #FF23FF; 
 }
+.btn-purple:hover {
+  background: #B200FFFF;
+}
+/* Buttons */
