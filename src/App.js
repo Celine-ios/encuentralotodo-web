@@ -34,7 +34,7 @@ const Home = () => (
             </div>
             <div>
             <button type="submit" className="btn btn-purple" style={{width: '60%', height: '3em',margin: '20%'}}>
-              Iniciar Sesión
+              <Link to="/dashboard" style={{color: '#fff', textDecoration: 'none'}}>Iniciar Sesión</Link>
             </button>
             </div>
           </div>
@@ -50,7 +50,10 @@ const Home = () => (
 );
 
 const Dashboard = () => (
-  <h1>hello</h1>
+  <div className="App">
+    <aside className="sidebar"></aside>
+    <section className="main-view"></section>
+  </div>
 );
 
 /*class App extends Component {
