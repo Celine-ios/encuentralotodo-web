@@ -4,7 +4,6 @@ import './App.css';
 import './php/login/index.php';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-
 const App = () => (
   <Router>
   <div>
@@ -14,21 +13,6 @@ const App = () => (
   </Router>
 );
 
-const sendIt = () => {
-  var ajax = new XMLHttpRequest();
-    ajax.onreadystatechange = function() {
-
-    if (this.readyState == 4 && this.status == 200) {
-     alert(this.repsonse);
-    }
-
-  };
-  var email = document.getElementsByName('email').innerHTML;
-  var psw = document.getElementsByName('password').innerHTML;
-  ajax.open("post", "php/login/index.php", true);
-  ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  ajax.send('?hello=qlq');
-};
 const Home = () => (
      <div className="App">
         <header>
@@ -49,7 +33,9 @@ const Home = () => (
               <input type="password" name="password" className="input" placeholder="Contraseña" required/>
             </div>
             <div>
-            <button type="submit" className="btn btn-purple" style={{width: '60%', height: '3em',margin: '20%'}} onClick={sendIt}>Iniciar Sesión</button>
+            <button type="submit" className="btn btn-purple" style={{width: '60%', height: '3em',margin: '20%'}}>
+              Iniciar Sesión
+            </button>
             </div>
           </div>
         </div>
